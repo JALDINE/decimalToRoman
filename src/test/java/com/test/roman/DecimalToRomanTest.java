@@ -6,9 +6,7 @@ public class DecimalToRomanTest extends TestCase {
 	
 	//TDD Decimal to roman
 	public void decimalToRomanTest(){
-		DecimalToRoman decimal=new DecimalToRoman();
-		String roman=decimal.toRoman(1);
-		assertEquals(roman, 'I');
+		assertEquals(DecimalToRoman.toRoman(1), 'I');
 	}
 
 }
