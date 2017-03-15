@@ -1,12 +1,14 @@
 package com.test.roman;
 
-import junit.framework.TestCase;
+import org.junit.Assert;
+import org.junit.Test;
 
-public class DecimalToRomanTest extends TestCase {
+public class DecimalToRomanTest{
 	
 	//TDD Decimal to roman
+	@Test
 	public void decimalToRomanTest(){
-		assertEquals(DecimalToRoman.toRoman(1), 'I');
+		Assert.assertEquals(DecimalToRoman.toRoman(2), "II");
 	}
 
 }

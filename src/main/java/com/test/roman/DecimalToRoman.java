@@ -26,5 +26,16 @@ public class DecimalToRoman {
         map.put(1000, "M");
         
 	    }
+	 //method to convert decimal to roman number
+	 public final static String toRoman(int num) {
+		 //look for the key value equal or less than the parameter value.
+	        int i =  map.floorKey(num);
+	        if ( num == i ) {
+	        	//if the parameter value equal to the key value return the roman value corresponding
+	            return map.get(num);
+	        }
+	        //else 
+	        return map.get(i) + toRoman(num-i);
+	    }
 
 }
