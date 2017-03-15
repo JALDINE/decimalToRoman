@@ -34,7 +34,9 @@ public class DecimalToRoman {
 	        	//if the parameter value equal to the key value return the roman value corresponding
 	            return map.get(num);
 	        }
-	        //else 
+	        /*else we get the roman value and we concatenate to the return value of the toRoman method 
+	        the call of toRomain is recursive until we find the key value equal to the parameter value  
+	        */
 	        return map.get(i) + toRoman(num-i);
 	    }
 
