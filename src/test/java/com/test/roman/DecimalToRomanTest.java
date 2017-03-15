@@ -8,6 +8,7 @@ public class DecimalToRomanTest extends TestCase {
 	public void decimalToRomanTest(){
 		DecimalToRoman decimal=new DecimalToRoman();
 		String roman=decimal.toRoman(1);
+		assertEquals(roman, 'I');
 	}
 
 }
